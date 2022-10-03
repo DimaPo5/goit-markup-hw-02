@@ -40,16 +40,16 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: var(--main-color);
+}
+.site-navigation .link :hover,
+.site-navigation .link :focus,
+.nav-contact .link :hover,
+.nav-contact .link :focus {
   color: var(--third-color);
 }
-.site-navigation  .link : hover,
-.site-navigation  .link : focus,
-.nav-contact  .link : hover,
-.nav-contact  .link : focus {
-  color: var(--main-color);
-}
-.link .current {
-  color: var(--main-color);
+.link {
+  color: #757575;
 }
 .nav-contact .link {
   color: var(--color-fon);
@@ -75,6 +75,18 @@ body {
   color: var(--write-color);
   background-color: var(--third-color);
   cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .fiature-title {
   font-weight: 700;
@@ -126,7 +138,7 @@ body {
 }
 .footer-address : hover,
 .footer-addres  : focus {
-  color: var();
+  color: var(--write-color);
 }
 
 /* Portfolio */
@@ -141,10 +153,11 @@ body {
   background-color: #f5f4fa;
   cursor: pointer;
 }
-.filter-btn : hover {
-  color: var(--write-color);
+.filter-btn :hover,
+.filter-btn :focus {
   color: var(--third-color);
 }
+
 .content-title {
   font-weight: 700;
   font-size: 18px;
@@ -156,4 +169,33 @@ body {
   font-size: 16px;
   line-height: 1.87;
   color: var(--main-color);
+}
+/* portfolio */
+.filter-btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  background-color: #f5f4fa;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.filter-btn :hover {
+  color: var(--write-color);
+  background-color: var(--third-color);
+}
+.content-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+.content-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--second-color);
 }
