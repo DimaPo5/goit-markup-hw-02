@@ -1,18 +1,24 @@
 :root {
+  /* колір основного тексту  */
   --main-color: #212121;
+  /* другій колір  */
   --second-color: #757575;
+  /* третій колір */
   --third-color: #2196f3;
+  /* білий колір */
   --write-color: #ffffff;
+  /* колір фону */
   --color-fon: #2f303a;
 }
 body {
   background-color: var(--write-color);
   font-family: 'Roboto', sans-serif;
-  color: var(main-color);
+  color: var(--main-color);
   letter-spacing: 0.03em;
   font-size: 14px;
   text-decoration: none;
 }
+/* Лого */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -24,30 +30,33 @@ body {
 .nav-logo {
   color: #000000;
 }
-
+/* site nav */
+.list {
+  list-style: none;
+}
 .site-navigation .link,
 .nav-contact .link {
   font-weight: 500;
-  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: var(--third-color);
+}
+.site-navigation  .link : hover,
+.site-navigation  .link : focus,
+.nav-contact  .link : hover,
+.nav-contact  .link : focus {
   color: var(--main-color);
 }
-.site-navigation.link: hover,
-.site-navigation .link: focus,
-.nav-contact .link: hover,
-.nav-contact .link: focus {
-  color: tomato;
-}
-.link {
-  color: azure;
+.link .current {
+  color: var(--main-color);
 }
 .nav-contact .link {
-  color: var(--second-color);
+  color: var(--color-fon);
 }
-
+/* riko */
 .rico {
-  background-color: #2f303a;
+  background-color: var(--color-fon);
 }
 .rico-title {
   font-weight: 900;
@@ -55,15 +64,15 @@ body {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--write-color);
 }
 .rico-btn {
-  font-family: 'Roboto';
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.86;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--write-color);
   background-color: var(--third-color);
   cursor: pointer;
 }
@@ -71,30 +80,33 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
 }
 .fiature-text {
   line-height: 1.71;
   color: var(--second-color);
+}
+/* work */
+.command {
+  background: #f5f4fa;
 }
 .work-title,
 .command-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16px;
+  text-align: center;
 }
-.command {
-  background-color: #f5f4fa;
-}
+
 .command-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 .command-skills {
   font-weight: 400;
-  line-height: 1.18;
   color: var(--second-color);
+  text-align: center;
 }
 .fooret {
   background-color: var(--color-fon);
@@ -102,17 +114,19 @@ body {
 .footer-logo {
   color: var(--write-color);
 }
-.footer-adresse {
-  color: #ffffff;
+.footer-address {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--write-color);
   text-decoration: none;
 }
 .footer-cont {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
-.footer-adresse: hover,
-.footer-adresse: focus {
-  color: tomato;
+.footer-address : hover,
+.footer-addres  : focus {
+  color: var();
 }
 
 /* Portfolio */
@@ -128,8 +142,8 @@ body {
   cursor: pointer;
 }
 .filter-btn : hover {
-  color: blue;
-  background-color: tomato;
+  color: var(--write-color);
+  color: var(--third-color);
 }
 .content-title {
   font-weight: 700;
@@ -141,5 +155,5 @@ body {
 .content-text {
   font-size: 16px;
   line-height: 1.87;
-  color: var(--second-color);
+  color: var(--main-color);
 }
