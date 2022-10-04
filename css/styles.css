@@ -156,7 +156,7 @@ body {
 }
 .filter-btn:hover,
 .filter-btn:focus {
-  color: var(--third-color);
+  color: var(--write-color);
 }
 
 .content-title {
@@ -199,4 +199,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   color: var(--second-color);
+}
+.fooret .footer-cont:hover {
+  color: var(--third-color);
 }
