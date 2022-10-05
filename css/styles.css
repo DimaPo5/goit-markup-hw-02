@@ -16,7 +16,6 @@ body {
   color: var(--main-color);
   letter-spacing: 0.03em;
   font-size: 14px;
-  text-decoration: none;
 }
 /* Лого */
 .logo {
@@ -48,25 +47,27 @@ body {
 .nav-contact .link:focus {
   color: var(--third-color);
 }
-.link {
-  color: #757575;
+.link.current {
+  color: var(--third-color);
 }
+
 .nav-contact .link {
   color: var(--second-color);
 }
 /* riko */
-.rico {
+.hero {
   background-color: var(--color-fon);
 }
-.rico-title {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--write-color);
+  text-transform: uppercase;
 }
-.rico-btn {
+.hero-btn {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -89,9 +90,9 @@ body {
   margin: -1px;
 }
 .fiature-title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 .fiature-text {
   line-height: 1.71;
@@ -101,9 +102,7 @@ body {
 .command {
   background: #f5f4fa;
 }
-.work-title,
-.command-title {
-  font-weight: 700;
+.section-title {
   font-size: 36px;
   line-height: 1.16px;
   text-align: center;
@@ -115,10 +114,10 @@ body {
   line-height: 1.18;
   text-align: center;
 }
-.command-skills {
-  font-weight: 400;
+.command-position {
   color: var(--second-color);
   text-align: center;
+  font-size: 16px;
 }
 .fooret {
   background-color: var(--color-fon);
@@ -136,6 +135,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   line-height: 1.71;
+  font-style: normal;
 }
 .footer-address:hover,
 .footer-addres:focus {
@@ -189,7 +189,6 @@ body {
   background-color: var(--third-color);
 }
 .content-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
