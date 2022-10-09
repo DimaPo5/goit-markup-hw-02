@@ -47,6 +47,13 @@ body {
 .nav-contact .link:focus {
   color: var(--third-color);
 }
+.site-navigation {
+  display: flex;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
 .link.current {
   color: var(--third-color);
 }
@@ -78,7 +85,19 @@ img {
 .nav-contact .link {
   color: var(--second-color);
 }
-/* riko */
+.header {
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 34px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+/* Герой */
 .hero {
   background-color: var(--color-fon);
 }
@@ -122,6 +141,10 @@ img {
   line-height: 1.71;
   color: var(--second-color);
 }
+.fiature {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* work */
 .command {
   background: #f5f4fa;
@@ -164,6 +187,10 @@ img {
 .footer-address:hover,
 .footer-addres:focus {
   color: var(--third-color);
+}
+.command {
+  padding-top: 112px;
+  padding-bottom: 0px;
 }
 
 /* Portfolio */
